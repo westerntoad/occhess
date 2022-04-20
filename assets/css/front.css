@@ -1,0 +1,48 @@
+@import 'assets\css\reset.css';
+
+#mtn-div {
+    position: relative;
+    padding-top: 5vw;
+    background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
+    height: 20.2vw;
+}
+
+#title {
+    font-size: 3rem;
+	font-family: "Verdana";
+	font-variant: small-caps;
+
+    background-color: #bababa;
+
+	background-image: linear-gradient(135deg, #8cbeff, 40%, #bababa);
+	background-size: 100%;
+	background-repeat: repeat;
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
+
+    position: absolute;
+    top: 72%;
+    left: 51.5%;
+    transform: translate(-50%, -50%);
+}
+
+#mountain {
+    width: 100vw;
+    height: max-content;
+
+    /*color: #1a1a1a;*/
+}
+
+#main {
+    margin-left: 18rem;
+    margin-right: 18rem;
+}
+
+body {
+	margin: 0;
+    margin-top: 0;
+	background-image: linear-gradient(#3d3d3d, 25%, #1a1a1a);
+}
