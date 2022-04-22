@@ -1,26 +1,30 @@
 @import 'assets\css\reset.css';
 
-:root {
-    --mountain: rgb(28, 127, 255);
-    --background: rgb(61, 61, 61);
-}
-
 #mtn-div {
     position: relative;
     padding-top: 5vw;
     background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
-    height: 20.14vw;
+    height: 20.2vw;
 }
 
 #title {
-    font-size: 4vw;
+    font-size: 3rem;
 	font-family: "Verdana";
 	font-variant: small-caps;
 
-    color: #dcdcff;
+    background-color: #bababa;
+
+	background-image: linear-gradient(135deg, #8cbeff, 40%, #bababa);
+	background-size: 100%;
+	background-repeat: repeat;
+	
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-background-clip: text;
+	-moz-text-fill-color: transparent;
 
     position: absolute;
-    top: 78%;
+    top: 72%;
     left: 51.5%;
     transform: translate(-50%, -50%);
 }
@@ -33,15 +37,12 @@
 }
 
 #main {
-    height: 5000px;
     margin-left: 18rem;
     margin-right: 18rem;
-    background-color: var(--mountain);
-    color: #bababa;
 }
 
 body {
 	margin: 0;
     margin-top: 0;
-	background-color: var(--mountain);
+	background-image: linear-gradient(#3d3d3d, 25%, #1a1a1a);
 }
