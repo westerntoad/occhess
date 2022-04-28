@@ -3,45 +3,48 @@
 :root {
     --mountain: rgb(28, 127, 255);
     --background: rgb(61, 61, 61);
-}
-
-#mtn-div {
-    position: relative;
-    padding-top: 5vw;
-    background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
-    height: 20.14vw;
-}
-
-#title {
-    font-size: 4vw;
-	font-family: "Verdana";
-	font-variant: small-caps;
-
-    color: #dcdcff;
-
-    position: absolute;
-    top: 78%;
-    left: 51.5%;
-    transform: translate(-50%, -50%);
-}
-
-#mountain {
-    width: 100vw;
-    height: max-content;
-
-    /*color: #1a1a1a;*/
-}
-
-#main {
-    height: 5000px;
-    margin-left: 18rem;
-    margin-right: 18rem;
-    background-color: var(--mountain);
-    color: #bababa;
+    
 }
 
 body {
 	margin: 0;
     margin-top: 0;
 	background-color: var(--mountain);
+}
+
+
+#mtn-div {
+    background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
+    width: 100vw;
+    height: 80vh;
+    max-width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+#mtn-div svg {
+    /* remove hairline gap between #main and mountain svg */
+    margin-bottom: -1px;
+}
+
+#mtn-div h1 {
+    font-size: 4vw;
+	font-family: "Verdana";
+	font-variant: small-caps;
+    font-weight: normal;
+
+    color: #dcdcff;
+
+    position: absolute;
+    top: 77vh;
+    left: 51vw;
+    transform: translate(-50%, -100%);
+}
+
+#main {
+    height: 1000px;
+    padding-left: 6vw;
+    padding-right: 6vw;
+    background-color: var(--mountain);
+    color: #bababa;
 }
