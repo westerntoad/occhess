@@ -8,43 +8,122 @@
 
 body {
 	margin: 0;
-    margin-top: 0;
 	background-color: var(--mountain);
 }
 
-
+/*
 #mtn-div {
-    background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
-    width: 100vw;
-    height: 80vh;
-    max-width: 100%;
+
+}
+@media (min-aspect-ratio: 8/5) {
+	#mtn-div {
+        
+	}
+}*/
+#mtn-div {
     display: flex;
     align-items: flex-end;
+    width: 100vw;
+    max-width: 100%;
+    height: 80vh;
+    background-image: linear-gradient(#8cbeff, 40%, #dcdcff);
 }
 
 #mtn-div svg {
     /* remove hairline gap between #main and mountain svg */
-    margin-bottom: -1px;
+    margin-bottom: -0.5vh;
 }
 
 #mtn-div h1 {
-    font-size: 4vw;
-	font-family: "Verdana";
-	font-variant: small-caps;
-    font-weight: normal;
-
-    color: #dcdcff;
-
     position: absolute;
     top: 77vh;
     left: 51vw;
     transform: translate(-50%, -100%);
+
+    font-size: 4vw;
+	font-family: "Verdana";
+	font-variant: small-caps;
+    font-weight: normal;
+    color: #dcdcff;
 }
 
+
+
+
+
+
 #main {
-    height: 1000px;
-    padding-left: 6vw;
-    padding-right: 6vw;
+    padding-top: 40vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    padding-bottom: 4vh;
     background-color: var(--mountain);
-    color: #bababa;
+
+    
+    color:  #bababa;
+}
+
+#main h1 {
+    color: #8cbeff;
+    padding-left: 5vw;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+#main p {
+    font-size: 1.25rem;
+    text-align: justify;
+    font-family: Arial;
+}
+
+#main a {
+    color: #8cbeff;
+    font-style: italic;
+}
+
+#links {
+    display: flex;
+}
+
+#links img {
+    flex: 50%;
+    width: 25%;
+    height: 25%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+
+    cursor: pointer;
+}
+
+
+#main-to-footer {
+    background-image: linear-gradient(var(--mountain), rgb(46, 46, 46));
+    height: 10rem;
+}
+
+
+footer {
+    height: 3rem;
+    border-top: 4px ridge rgb(30, 30, 30);
+    background-color: rgb(40, 40, 40);
+
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+footer p {
+    float: left;
+    width: 50%;
+    text-align: center;
+
+    color: #8d8d8d;
+    font-family: Arial;
+    font-style: italic;
+}
+
+footer a {
+    color: #8d8d8d;
+    font-family: Arial;
+    font-style: italic;
+    text-decoration: none;
 }

@@ -7,7 +7,6 @@ var mtnDiv;
 window.addEventListener('load', (event) => {
     mtnDiv = document.querySelector("#mtn-div");
     console.log('page is fully loaded');
-    console.log(mtnDiv.offsetHeight);
   });
 
 
