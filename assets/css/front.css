@@ -11,15 +11,8 @@ body {
 	background-color: var(--mountain);
 }
 
-/*
-#mtn-div {
 
-}
-@media (min-aspect-ratio: 8/5) {
-	#mtn-div {
-        
-	}
-}*/
+
 #mtn-div {
     display: flex;
     align-items: flex-end;
@@ -31,6 +24,7 @@ body {
 
 #mtn-div svg {
     /* remove hairline gap between #main and mountain svg */
+
     margin-bottom: -0.5vh;
 }
 
@@ -70,6 +64,12 @@ body {
     font-style: italic;
 }
 
+#main h2 {
+    color: #8cbeff;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
 #main p {
     font-size: 1.25rem;
     text-align: justify;
@@ -93,6 +93,16 @@ body {
     padding-right: 10vw;
 
     cursor: pointer;
+    padding-bottom: 20vh;
+}
+
+#puzzle {
+    width: 35vw;
+    height: calc(35vw + 50px);
+    
+    position: relative;
+    transform: translate(-50%);
+    left: 36vw;
 }
 
 
@@ -112,8 +122,10 @@ footer {
 }
 
 footer p {
+    font-size: 1rem;
     float: left;
     width: 50%;
+    height: 0;
     text-align: center;
 
     color: #8d8d8d;
@@ -126,4 +138,31 @@ footer a {
     font-family: Arial;
     font-style: italic;
     text-decoration: none;
+}
+
+@media (max-aspect-ratio: 1.1) {
+    #mtn-div {
+        height: 90vh;
+    }
+    #mtn-div h1 {
+        width: 100vw;
+        text-align: center;
+        top: 40vh;
+        left: 50vw;
+        color: var(--mountain);
+
+        font-size: 10vw;
+	}
+    #main {
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+    #main h1 {
+        font-size: 3rem;
+    }
+    #puzzle {
+        width: 65vw;
+        height: calc(65vw + 50px);
+        left: 40vw;
+    }
 }
