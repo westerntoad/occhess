@@ -140,7 +140,7 @@ footer a {
     text-decoration: none;
 }
 
-@media screen and (max-aspect-ratio: 1.1) {
+@media (orientation: portrait) {
     #mtn-div {
         height: 90vh;
     }
