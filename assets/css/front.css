@@ -202,6 +202,7 @@ footer a {
     #schedule { display: block; }
     #online { width: calc(var(--mountain-width) / 1.25); padding-bottom: 5rem;}
     #in-person { width: calc(var(--mountain-width) / 1.1); }
+    #schedule td { font-size: 0.8rem; }
 
     #puzzle {
         width: 65vw;
