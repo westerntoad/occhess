@@ -3,6 +3,7 @@
 :root {
     --mountain: rgb(28, 127, 255);
     --background: rgb(61, 61, 61);
+    --main-width: 72vw;
     
 }
 
@@ -50,15 +51,16 @@ body {
 
 #main {
     padding-top: 40vh;
-    padding-left: 14vw;
-    padding-right: 14vw;
+    --two-pad: calc(100vw - var(--main-width));
+    --pad: calc(var(--two-pad) / 2);
+    padding-left: var(--pad);
+    padding-right: var(--pad);
     padding-bottom: 4vh;
     background-color: var(--mountain);
 
     
     color:  #bababa;
 }
-
 #main h1 {
     color: #8cbeff;
     padding-left: 5vw;
@@ -73,14 +75,50 @@ body {
 }
 
 #main p {
+    padding: 0;
+    margin: 0;
+    border: 0;
     font-size: 1.25rem;
     text-align: justify;
     font-family: Arial;
+}
+#main .note:before {
+    content: "Note: ";
+}
+#main .note {
+    display: block;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3rem;
+
+    font-size: 1.2rem;
+    font-style: italic;
 }
 
 #main a {
     color: #8cbeff;
     font-style: italic;
+}
+
+#schedule {
+    display: flex;
+}
+#online {
+    width: calc(var(--main-width) / 2);
+    margin: auto;
+}
+#in-person {
+    width: calc(var(--main-width) / 3.75);
+    margin: auto;
+}
+#schedule th {
+    font-size: 2.2rem;
+    padding-bottom: 0.5rem;
+}
+#schedule td {
+    font-family: arial;
+    font-size: 1rem;
+    text-align: center;
 }
 
 #links {
@@ -143,9 +181,7 @@ footer a {
 }
 
 @media (orientation: portrait) {
-    #mtn-div {
-        height: 90vh;
-    }
+    #mtn-div { height: 90vh; }
     #mtn-div h1 {
         width: 100vw;
         text-align: center;
@@ -155,16 +191,18 @@ footer a {
 
         font-size: 10vw;
 	}
+
     #main {
         padding-left: 10vw;
         padding-right: 10vw;
     }
-    #main h1 {
-        font-size: 3rem;
-    }
-    #main h2 {
-        font-size: 2rem;
-    }
+    #main h1 { font-size: 3rem; }
+    #main h2 { font-size: 2rem; }
+
+    #schedule { display: block; }
+    #online { width: calc(var(--mountain-width) / 1.25); padding-bottom: 5rem;}
+    #in-person { width: calc(var(--mountain-width) / 1.1); }
+
     #puzzle {
         width: 65vw;
         height: calc(65vw + 50px);
