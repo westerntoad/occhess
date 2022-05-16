@@ -23,8 +23,10 @@ body {
 }
 
 #mtn-div svg {
-    /* remove hairline gap between #main and mountain svg */
+    width: 100%;
+    height: auto;
 
+    /* remove hairline gap between #main and mountain svg */
     margin-bottom: -0.5vh;
 }
 
@@ -160,9 +162,17 @@ footer a {
     #main h1 {
         font-size: 3rem;
     }
+    #main h2 {
+        font-size: 2rem;
+    }
     #puzzle {
         width: 65vw;
         height: calc(65vw + 50px);
         left: 40vw;
+    }
+}
+@supports (-webkit-backdrop-filter: blur(1px)) {
+    #mtn-div svg {
+        height: intrinsic;
     }
 }
